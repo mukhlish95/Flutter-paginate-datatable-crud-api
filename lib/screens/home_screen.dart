@@ -10,7 +10,7 @@ class HomeScreen extends StatelessWidget {
       // appBar: AppBar(),
       body: Center(
         child: Column(children: [
-          Text("HOme"),
+          Text("Home"),
           ElevatedButton(
               onPressed: () => Get.toNamed('/datatable'),
               child: Text("Ke Datatable")),

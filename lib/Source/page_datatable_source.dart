@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:tutor_api2/controllers/page_datatable_controller.dart';
 
-import '../screens/edit_dialog_screen.dart';
-
 class PageDTDataSource extends DataTableSource {
   final PageDataTableController _controller =
       Get.put(PageDataTableController());
@@ -26,7 +24,13 @@ class PageDTDataSource extends DataTableSource {
               style: ElevatedButton.styleFrom(
                   shape: RoundedRectangleBorder(),
                   backgroundColor: Colors.green),
-              onPressed: () => editDataDialog(),
+              onPressed: () {
+                print(data.id.toString());
+                final id = data.id;
+                return _controller.editData(id);
+
+                // return _controller.editData(data.id);
+              },
               icon: Icon(Icons.edit),
               label: Text("Edit"))),
         ],

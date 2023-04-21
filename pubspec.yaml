@@ -41,6 +41,7 @@ dependencies:
   fl_chart: ^0.61.0
   advanced_datatable: ^0.0.8
   auto_reload: ^1.1.0
+  dio: ^5.1.1
 
 dev_dependencies:
   flutter_test:
