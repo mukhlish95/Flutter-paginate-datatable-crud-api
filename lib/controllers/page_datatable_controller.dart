@@ -102,7 +102,7 @@ class PageDataTableController extends GetxController {
     // responseUpdate["electric"]["price"] = 12;
     filteredData.clear();
     fetchData();
-    Get.back();
+    // Get.back();
   }
 
   void setSearchQuery(String searhValue) {
